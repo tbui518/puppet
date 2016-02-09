@@ -4,10 +4,7 @@ class localusers {
                 shell      => '/bin/bash',
                 home       => '/home/admin',
                 gid        => 'wheel'
-                managehome =>  true,
-                
-
-
-                        }
+                managehome =>  'true',
+             }
 
 }
