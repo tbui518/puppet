@@ -13,5 +13,5 @@ class base::ssh {
                ensure => running,
                enable => true,
                subscribe => File['/etc/ssh/sshd_config'],
-
+          }
 }
