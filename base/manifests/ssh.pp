@@ -12,5 +12,6 @@ class base::ssh {
           service { 'sshd':
                ensure => running,
                enable => true,
-               require =>
+               subscribe => File['/etc/ssh/sshd_config'],
+
 }
